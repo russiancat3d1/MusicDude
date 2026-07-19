@@ -55,7 +55,7 @@ class SharedMusicViewModel(application: Application) : AndroidViewModel(applicat
             ComponentName(getApplication(), MusicPlaybackService::class.java)
         )
         
-        controllerFuture = MediaController.Builder(getApplication(), sessionToken).build()
+        controllerFuture = MediaController.Builder(getApplication(), sessionToken).buildAsync()
         controllerFuture?.addListener({
             mediaController = controllerFuture?.get()
             mediaController?.addListener(playerListener)
