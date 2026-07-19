@@ -97,7 +97,7 @@ fun PlayerScreen(
             // Hardware Dashboard Command Triggers Console Strip
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceSpaceEvenly,
+                horizontalArrangement = Arrangement.SpaceEvenly,
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 // Shuffle Button
