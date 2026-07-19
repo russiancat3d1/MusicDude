@@ -1,6 +1,6 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    // The Kotlin plugin has been removed because it is now built into Android by default!
 }
 
 android {
@@ -68,7 +68,7 @@ dependencies {
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
 
-    // 4. Image Loading (Coil is perfect for Compose & loading local album art)
+    // 4. Image Loading (Coil handles local album art)
     implementation("io.coil-kt:coil-compose:2.6.0")
     
     // Core Android libs
