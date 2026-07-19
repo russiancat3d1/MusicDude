@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("org.jetbrains.kotlin.plugin.compose") // The new Kotlin 2.0 requirement
 }
 
 android {
@@ -37,9 +38,7 @@ android {
         compose = true
     }
     
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.10"
-    }
+    // Notice that the composeOptions block has been completely deleted here!
 }
 
 dependencies {
