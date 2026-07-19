@@ -1,6 +1,5 @@
 plugins {
     id("com.android.application")
-    // The Kotlin plugin has been removed because it is now built into Android by default!
 }
 
 android {
@@ -32,10 +31,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-    
-    kotlinOptions {
-        jvmTarget = "17"
     }
     
     buildFeatures {
